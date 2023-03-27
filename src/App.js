@@ -20,7 +20,7 @@ function App() {
             <header className="App-header">
               <img src={logo} className="App-logo" alt="logo" />
               <h1 data-aos="fade-up" data-aos-duration="1000">
-                Super Crazy Baby
+                Super Crazy Babyy
               </h1>
             </header>
           </Container>
