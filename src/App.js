@@ -3,6 +3,7 @@ import {Button, Card, Container} from 'react-bootstrap';
 import {Parallax} from 'react-parallax';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import 'bootstrap/dist/css/bootstrap.css';
 import jetpack from './pictures/jetpackmf.jpg'
 import './App.css';
 
@@ -51,43 +52,20 @@ function App() {
             <Container className="my-5" data-aos="fade-up" data-aos-duration="1000">
                 <h2 className="text-center mb-5">Jetpack Products</h2>
                 <div className="d-flex flex-wrap justify-content-center">
-                    <Card style={{width: '18rem'}} data-aos="fade-right" data-aos-duration="1000">
-                        <Card.Img variant="top" src={jetpack} style={{width: '100%'}}/>
-                        <Card.Body>
-                            <Card.Title>Jetpack Model A</Card.Title>
-                            <Card.Text>
-                                This model we usually sell to our starter clients. Our Crazy Baby Model A is made for
-                                beginners in the jetpack baby industry.
-                                Because of the price, it is very attractive for new clients, the baby can do basic
-                                tricks.
-                            </Card.Text>
-                            <Button variant="primary">1'200$</Button>
-                        </Card.Body>
-                    </Card>
-
-                    <Card style={{width: '18rem'}} data-aos="fade-right" data-aos-duration="1000">
-                        <Card.Img variant="top" src={jetpack} style={{width: '100%'}}/>
-                        <Card.Body>
-                            <Card.Title>Jetpack Model B</Card.Title>
-                            <Card.Text>
-                                This model is perfect for intermediate pilots who want a little more speed and altitude.
-                                It can reach speeds of up to 750 mph and fly up to 20,000 feet.
-                            </Card.Text>
-                            <Button variant="primary">2'500$</Button>
-                        </Card.Body>
-                    </Card>
-
-                    <Card style={{width: '18rem'}} data-aos="fade-right" data-aos-duration="1000">
-                        <Card.Img variant="top" src={jetpack} style={{width: '100%'}}/>
-                        <Card.Body>
-                            <Card.Title>Jetpack Model C</Card.Title>
-                            <Card.Text>
-                                This is our top-of-the-line model, designed for experienced pilots who demand the best.
-                                It can reach speeds of up to 1000 mph and fly up to 30,000 feet.
-                            </Card.Text>
-                            <Button variant="primary">5'000$</Button>
-                        </Card.Body>
-                    </Card>
+                    <div data-aos="fade-right" data-aos-duration="1000">
+                        <Card className="d-flex flex-row">
+                            <Card.Img src={jetpack} style={{ width: '50%' }} />
+                            <Card.Body>
+                                <Card.Title>Jetpack Model A</Card.Title>
+                                <Card.Text>
+                                    This model we usually sell to our starter clients. Our Crazy Baby Model A is
+                                    made for beginners in the jetpack baby industry. Because of the price, it is
+                                    very attractive for new clients, the baby can do basic tricks.
+                                </Card.Text>
+                                <Button variant="primary">1'200$</Button>
+                            </Card.Body>
+                        </Card>
+                    </div>
                 </div>
             </Container>
         </div>
