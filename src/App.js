@@ -13,7 +13,8 @@ function App() {
         AOS.init();
     }, []);
 
-    // chatgpt helped with svg
+    /* chatgpt helped with svg but most of the things were our ideas,
+     we barely used any extra websites beside "AI's"*/
 
     return (
         <div className="App">
