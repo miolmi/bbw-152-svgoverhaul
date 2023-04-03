@@ -4,7 +4,8 @@ import {Parallax} from 'react-parallax';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import jetpack from './pictures/jetpackmf.jpg'
+//import jetpack from './pictures/jetpackmf.jpg'
+import sky from './pictures/sky_2.jpg'
 import child_1 from './pictures/child_1.png'
 import child_2 from './pictures/child_2.png'
 import child_3 from './pictures/child_3.png'
@@ -23,7 +24,7 @@ function App() {
 
     return (
         <div className="App">
-            <Parallax bgImage={jetpack} strength={500}>
+            <Parallax bgImage={sky} strength={500}>
                 <Container>
                     <header className="App-header">
                         <svg width="100" height="100">
