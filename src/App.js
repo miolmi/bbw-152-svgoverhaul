@@ -5,6 +5,11 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import jetpack from './pictures/jetpackmf.jpg'
+import child_1 from './pictures/child_1.png'
+import child_2 from './pictures/child_2.png'
+import child_3 from './pictures/child_3.png'
+
+
 import './App.css';
 
 function App() {
@@ -54,7 +59,7 @@ function App() {
                 <div className="d-flex flex-wrap justify-content-center">
                     <div data-aos="fade-right" data-aos-duration="1000">
                         <Card className="d-flex flex-row">
-                            <Card.Img src={jetpack}/>
+                            <Card.Img src={child_1}/>
                             <Card.Body>
                                 <Card.Title>Jetpack Model A</Card.Title>
                                 <Card.Text>
@@ -68,7 +73,7 @@ function App() {
                     </div>
                     <div data-aos="fade-right" data-aos-duration="1000">
                         <Card className="d-flex flex-row">
-                            <Card.Img src={jetpack}/>
+                            <Card.Img src={child_2}/>
                             <Card.Body>
                                 <Card.Title>Jetpack Model B</Card.Title>
                                 <Card.Text>
@@ -82,7 +87,7 @@ function App() {
                     </div>
                     <div data-aos="fade-right" data-aos-duration="1000">
                         <Card className="d-flex flex-row">
-                            <Card.Img src={jetpack}/>
+                            <Card.Img src={child_3}/>
                             <Card.Body>
                                 <Card.Title>Jetpack Pro</Card.Title>
                                 <Card.Text>
