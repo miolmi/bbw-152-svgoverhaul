@@ -36,3 +36,28 @@
     transform: rotate(360deg);
   }
 }
+
+@keyframes colorize {
+  0% {
+    color: black;
+  }
+  25% {
+    color: #540202;
+  }
+  50% {
+    color: #c40606;
+  }
+  75% {
+    color: #ff0000;
+  }
+  100% {
+    color: #000000;
+  }
+
+}
+
+h1 {
+  animation: 3s;
+  animation-iteration-count: infinite;
+  animation-name: colorize;
+}
