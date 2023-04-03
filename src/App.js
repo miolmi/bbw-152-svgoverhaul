@@ -50,7 +50,7 @@ function App() {
                             Super Crazy Baby
                         </h1>
                         <h1 data-aos="fade-left" data-aos-duration="1000">
-                            We sell jetpacks no one has ever seen before, since we sell them paired with babies.
+                            conquer the sky with us.
                         </h1>
                     </header>
                 </Container>
