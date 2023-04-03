@@ -4,7 +4,6 @@ import {Parallax} from 'react-parallax';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import 'bootstrap/dist/css/bootstrap.css';
-//import jetpack from './pictures/jetpackmf.jpg'
 import sky from './pictures/sky_2.jpg'
 import child_1 from './pictures/child_1.png'
 import child_2 from './pictures/child_2.png'
@@ -47,10 +46,10 @@ function App() {
                                          values="40;0;40" dur="1s" repeatCount="indefinite"/>
                             </rect>
                         </svg>
-                        <h1 data-aos="fade-up" data-aos-duration="1000">
+                        <h1 data-aos="fade-right" data-aos-duration="1000">
                             Super Crazy Baby
                         </h1>
-                        <h1 data-aos="fade-up" data-aos-duration="1000">
+                        <h1 data-aos="fade-left" data-aos-duration="1000">
                             We sell jetpacks no one has ever seen before, since we sell them paired with babies.
                         </h1>
                     </header>
@@ -59,7 +58,7 @@ function App() {
             <Container className="my-5">
                 <h2 className="text-center mb-5">Jetpack Products</h2>
                 <div className="d-flex flex-wrap justify-content-center">
-                    <div data-aos="fade-right" data-aos-duration="1000">
+                    <div data-aos="fade-right" data-aos-duration="2000">
                         <Card className="d-flex flex-row">
                             <Card.Img src={child_1}/>
                             <Card.Body>
@@ -73,7 +72,7 @@ function App() {
                             </Card.Body>
                         </Card>
                     </div>
-                    <div data-aos="fade-left" data-aos-duration="1000">
+                    <div data-aos="fade-left" data-aos-duration="2000">
                         <Card className="d-flex flex-row">
                             <Card.Img src={child_2}/>
                             <Card.Body>
@@ -87,7 +86,7 @@ function App() {
                             </Card.Body>
                         </Card>
                     </div>
-                    <div data-aos="fade-right" data-aos-duration="1000">
+                    <div data-aos="fade-right" data-aos-duration="2000">
                         <Card className="d-flex flex-row">
                             <Card.Img src={child_3}/>
                             <Card.Body>
