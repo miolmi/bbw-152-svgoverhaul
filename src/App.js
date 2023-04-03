@@ -55,7 +55,7 @@ function App() {
                     </header>
                 </Container>
             </Parallax>
-            <Container className="my-5" data-aos="fade-up" data-aos-duration="1000">
+            <Container className="my-5">
                 <h2 className="text-center mb-5">Jetpack Products</h2>
                 <div className="d-flex flex-wrap justify-content-center">
                     <div data-aos="fade-right" data-aos-duration="1000">
@@ -72,7 +72,7 @@ function App() {
                             </Card.Body>
                         </Card>
                     </div>
-                    <div data-aos="fade-right" data-aos-duration="1000">
+                    <div data-aos="fade-left" data-aos-duration="1000">
                         <Card className="d-flex flex-row">
                             <Card.Img src={child_2}/>
                             <Card.Body>
