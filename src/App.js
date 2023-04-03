@@ -54,7 +54,7 @@ function App() {
                 <div className="d-flex flex-wrap justify-content-center">
                     <div data-aos="fade-right" data-aos-duration="1000">
                         <Card className="d-flex flex-row">
-                            <Card.Img src={jetpack} style={{ width: '50%' }} />
+                            <Card.Img src={jetpack}/>
                             <Card.Body>
                                 <Card.Title>Jetpack Model A</Card.Title>
                                 <Card.Text>
@@ -63,6 +63,34 @@ function App() {
                                     very attractive for new clients, the baby can do basic tricks.
                                 </Card.Text>
                                 <Button variant="primary">1'200$</Button>
+                            </Card.Body>
+                        </Card>
+                    </div>
+                    <div data-aos="fade-right" data-aos-duration="1000">
+                        <Card className="d-flex flex-row">
+                            <Card.Img src={jetpack}/>
+                            <Card.Body>
+                                <Card.Title>Jetpack Model B</Card.Title>
+                                <Card.Text>
+                                    This model we usually sell to our more advanced clients. Our Crazy Baby Model B is
+                                    made for our advanced customers, the customers that have already had their experience with a few babies.
+                                    Even though it is more pricey, the price comes with a skilled baby.
+                                </Card.Text>
+                                <Button variant="primary">4'200$</Button>
+                            </Card.Body>
+                        </Card>
+                    </div>
+                    <div data-aos="fade-right" data-aos-duration="1000">
+                        <Card className="d-flex flex-row">
+                            <Card.Img src={jetpack}/>
+                            <Card.Body>
+                                <Card.Title>Jetpack Pro</Card.Title>
+                                <Card.Text>
+                                    This is the model for our clients, that are seriously involved in the baby jetpack industry.
+                                    This Model includes the most skilled baby, with basically no restrictions, but it comes at a price.
+                                    If you want to conquer the world with a baby wearing a jetpack, this is your choice!
+                                </Card.Text>
+                                <Button variant="primary">10'000$</Button>
                             </Card.Body>
                         </Card>
                     </div>
