@@ -69,7 +69,7 @@ function App() {
                 <h2>Jetpack Products</h2>
 
                 <Container>
-                    <Row xs={1} md={1} lg={2} className={"g-4"}>
+                    <Row xs={1} md={1} lg={1} className={"g-5"}>
                         <Col>
                             <Card className="d-flex flex-row" data-aos="fade-right" data-aos-duration="2000">
                                 <Card.Img className="card-img-left" src={child_1}/>
