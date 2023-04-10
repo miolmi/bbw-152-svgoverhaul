@@ -1,6 +1,6 @@
 import React from 'react';
-import {Button, Card, Container} from 'react-bootstrap';
-import {Parallax} from 'react-parallax';
+import {Button, Card, Col, Container, Row} from 'react-bootstrap';
+import {Background, Parallax} from 'react-parallax';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -8,6 +8,7 @@ import sky from './pictures/sky_2.jpg'
 import child_1 from './pictures/child_1.png'
 import child_2 from './pictures/child_2.png'
 import child_3 from './pictures/child_3.png'
+import video_bg from './pictures/manyRocketsBg.mp4'
 
 
 import './App.css';
@@ -19,10 +20,13 @@ function App() {
     }, []);
 
     /* chatgpt helped with svg but most of the things were our ideas,
-     we barely used any extra websites beside "AI's"*/
+     we barely used any extra websites beside "AI's"
 
-    return (
-        <div className="App">
+     the following links where used as a source for the css of the image onhover animation
+     https://www.youtube.com/watch?v=LSRNmhLS76o&ab_channel=CodeCommerce
+     https://codepen.io/alexkleinubing/pen/abBzMKe*/
+
+    return (<div className="App">
             <Parallax bgImage={sky} strength={500}>
                 <Container>
                     <header className="App-header">
@@ -49,59 +53,77 @@ function App() {
                         <h1 data-aos="fade-right" data-aos-duration="1000">
                             Super Crazy Baby
                         </h1>
-                        <h1 data-aos="fade-left" data-aos-duration="1000">
+                        <p data-aos="fade-left" data-aos-duration="1000">
                             conquer the sky with us.
-                        </h1>
+                        </p>
                     </header>
                 </Container>
             </Parallax>
-            <Container className="my-5">
-                <h2 className="text-center mb-5">Jetpack Products</h2>
-                <div className="d-flex flex-wrap justify-content-center">
-                    <div data-aos="fade-right" data-aos-duration="2000">
-                        <Card className="d-flex flex-row">
-                            <Card.Img src={child_1}/>
-                            <Card.Body>
-                                <Card.Title>Jetpack Model A</Card.Title>
-                                <Card.Text>
-                                    This model we usually sell to our starter clients. Our Crazy Baby Model A is
-                                    made for beginners in the jetpack baby industry. Because of the price, it is
-                                    very attractive for new clients, the baby can do basic tricks.
-                                </Card.Text>
-                                <Button variant="primary">1'200$</Button>
-                            </Card.Body>
-                        </Card>
-                    </div>
-                    <div data-aos="fade-left" data-aos-duration="2000">
-                        <Card className="d-flex flex-row">
-                            <Card.Img src={child_2}/>
-                            <Card.Body>
-                                <Card.Title>Jetpack Model B</Card.Title>
-                                <Card.Text>
-                                    This model we usually sell to our more advanced clients. Our Crazy Baby Model B is
-                                    made for our advanced customers, the customers that have already had their experience with a few babies.
-                                    Even though it is more pricey, the price comes with a skilled baby.
-                                </Card.Text>
-                                <Button variant="primary">4'200$</Button>
-                            </Card.Body>
-                        </Card>
-                    </div>
-                    <div data-aos="fade-right" data-aos-duration="2000">
-                        <Card className="d-flex flex-row">
-                            <Card.Img src={child_3}/>
-                            <Card.Body>
-                                <Card.Title>Jetpack Pro</Card.Title>
-                                <Card.Text>
-                                    This is the model for our clients, that are seriously involved in the baby jetpack industry.
-                                    This Model includes the most skilled baby, with basically no restrictions, but it comes at a price.
-                                    If you want to conquer the world with a baby wearing a jetpack, this is your choice!
-                                </Card.Text>
-                                <Button variant="primary">10'000$</Button>
-                            </Card.Body>
-                        </Card>
-                    </div>
-                </div>
-            </Container>
+
+            <Parallax strength={0}>
+
+                <Background>
+                    <video src={video_bg} autoPlay loop muted/>
+                </Background>
+
+                <Container>
+                    <h2>Jetpack Products</h2>
+                    <Row xs={1} md={1} lg={1} className={"g-4"}>
+                        <Col>
+                            <Card className="d-flex flex-row" data-aos="fade-right" data-aos-duration="2000">
+                                <Card.Img className="card-img-left" src={child_1}/>
+                                <Card.Body>
+                                    <Card.Title>Jetpack Model A</Card.Title>
+                                    <Card.Text>
+                                        This model we usually sell to our starter clients. Our Crazy Baby Model A is
+                                        made for beginners in the jetpack baby industry. Because of the price, it is
+                                        very attractive for new clients, the baby can do basic tricks.
+                                    </Card.Text>
+                                    <Button variant="primary">1'200$</Button>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+
+                        <Col>
+                            <Card className="d-flex flex-row" data-aos="fade-left" data-aos-duration="2000">
+                                <Card.Img className="card-img-right" src={child_2}/>
+                                <Card.Body>
+                                    <Card.Title>Jetpack Model B</Card.Title>
+                                    <Card.Text>
+                                        This model we usually sell to our more advanced clients. Our Crazy Baby Model B
+                                        is
+                                        made for our advanced customers, the customers that have already had their
+                                        experience with a few babies.
+                                        Even though it is more pricey, the price comes with a skilled baby.
+                                    </Card.Text>
+                                    <Button variant="primary">4'200$</Button>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+
+                        <Col>
+                            <Card className="d-flex flex-row" data-aos="fade-right" data-aos-duration="2000">
+                                <Card.Img className="card-img-left" src={child_3}/>
+                                <Card.Body>
+                                    <Card.Title>Jetpack Pro</Card.Title>
+                                    <Card.Text>
+                                        This is the model for our clients, that are seriously involved in the baby
+                                        jetpack
+                                        industry.
+                                        This Model includes the most skilled baby, with basically no restrictions, but
+                                        it
+                                        comes at a
+                                        price.
+                                        If you want to conquer the world with a baby wearing a jetpack, this is your
+                                        choice!
+                                    </Card.Text>
+                                    <Button variant="primary">10'000$</Button>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                    </Row>
+                </Container>
+            </Parallax>
         </div>
     );
 }
