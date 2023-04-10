@@ -86,7 +86,6 @@ function App() {
                         </Col>
                         <Col>
                             <Card className="d-flex flex-row" data-aos="fade-left" data-aos-duration="2000">
-                                <Card.Img className="card-img-right" src={child_2}/>
                                 <Card.Body>
                                     <Card.Title>Jetpack Model B</Card.Title>
                                     <Card.Text>
@@ -98,6 +97,7 @@ function App() {
                                     </Card.Text>
                                     <Button variant="primary">4'200$</Button>
                                 </Card.Body>
+                                <Card.Img className="card-img-right" src={child_2}/>
                             </Card>
                         </Col>
                         <Col>
