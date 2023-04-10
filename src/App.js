@@ -53,7 +53,7 @@ function App() {
                         <h1 data-aos="fade-right" data-aos-duration="1000">
                             Super Crazy Baby
                         </h1>
-                        <p data-aos="fade-left" data-aos-duration="1000">
+                        <p className="title" data-aos="fade-left" data-aos-duration="1000">
                             conquer the sky with us.
                         </p>
                     </header>
@@ -66,9 +66,10 @@ function App() {
                     <video src={video_bg} autoPlay loop muted/>
                 </Background>
 
+                <h2>Jetpack Products</h2>
+
                 <Container>
-                    <h2>Jetpack Products</h2>
-                    <Row xs={1} md={1} lg={1} className={"g-4"}>
+                    <Row xs={1} md={1} lg={2} className={"g-4"}>
                         <Col>
                             <Card className="d-flex flex-row" data-aos="fade-right" data-aos-duration="2000">
                                 <Card.Img className="card-img-left" src={child_1}/>
@@ -83,7 +84,6 @@ function App() {
                                 </Card.Body>
                             </Card>
                         </Col>
-
                         <Col>
                             <Card className="d-flex flex-row" data-aos="fade-left" data-aos-duration="2000">
                                 <Card.Img className="card-img-right" src={child_2}/>
@@ -100,7 +100,6 @@ function App() {
                                 </Card.Body>
                             </Card>
                         </Col>
-
                         <Col>
                             <Card className="d-flex flex-row" data-aos="fade-right" data-aos-duration="2000">
                                 <Card.Img className="card-img-left" src={child_3}/>

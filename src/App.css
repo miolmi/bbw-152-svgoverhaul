@@ -65,13 +65,26 @@ h1 {
     animation-name: colorize;
 }
 
-video {
-    object-fit: cover;
+p.title {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+h2 {
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: underline red;
 }
 
+.card-img {
+    transition: 0.5s;
+    width: 50%;
+}
 
 .card-img-right:hover {
-    animation: spin-image-right infinite 1s linear;
+    animation: spin-image-right 1s forwards;
 }
 
 @keyframes spin-image-right {
@@ -84,7 +97,7 @@ video {
 }
 
 .card-img-left:hover {
-    animation: spin-image-left infinite 1s linear;
+    animation: spin-image-left 1s forwards;
 }
 
 @keyframes spin-image-left {
