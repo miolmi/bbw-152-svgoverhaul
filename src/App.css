@@ -78,6 +78,10 @@ h2 {
     text-decoration: underline red;
 }
 
+.home-main {
+    margin: 5em;
+}
+
 .card-img {
     width: 50%;
 }
@@ -108,4 +112,7 @@ h2 {
     }
 }
 
+.footer {
+    margin: 3em;
+}
 
