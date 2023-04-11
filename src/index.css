@@ -1,4 +1,8 @@
-body {
+* {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
+}
+
+/*body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -9,5 +13,109 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  monospace;
+}*/
+
+.App {
+    text-align: center;
 }
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+
+@keyframes colorize {
+    0% {
+        color: #ff0000;
+    }
+    25% {
+        color: #850000;
+    }
+    50% {
+        color: #640000;
+    }
+    75% {
+        color: #850000;
+    }
+    100% {
+        color: #ff0000;
+    }
+}
+
+h1 {
+    animation: 10s;
+    animation-iteration-count: infinite;
+    animation-name: colorize;
+}
+
+h2 {
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-decoration: underline red;
+}
+
+p.title {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.card-img-right:hover {
+    animation: spin-image-right 1s forwards;
+}
+
+@keyframes spin-image-right {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(15deg) scale(1.05);
+    }
+}
+
+.card-img-left:hover {
+    animation: spin-image-left 1s forwards;
+}
+
+@keyframes spin-image-left {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-15deg) scale(1.05);
+    }
+}
+
+
+

@@ -10,9 +10,6 @@ import child_2 from '../../pictures/child_2.png'
 import child_3 from '../../pictures/child_3.png'
 import video_bg from '../../pictures/manyRocketsBg.mp4'
 
-
-import '../../App.css';
-
 function Home() {
     // initialize AOS library
     React.useEffect(() => {
@@ -26,7 +23,7 @@ function Home() {
      https://codepen.io/alexkleinubing/pen/abBzMKe*/
 
     return (
-        <div className="App">
+        <div>
             <Parallax bgImage={sky} strength={500}>
                 <Container>
                     <header className="App-header">
@@ -66,10 +63,10 @@ function Home() {
                     <video src={video_bg} autoPlay loop muted/>
                 </Background>
 
-                <h2>Jetpack Products</h2>
+                <h2 className={"mt-5"}>Jetpack Products:</h2>
 
-                <Container className={"home-main"}>
-                    <Row xs={1} md={1} lg={1} className={"g-5"}>
+                <Container>
+                    <Row xs={1} md={1} lg={1} className={"g-5 m-5"}>
                         <Col>
                             <Card className="d-flex flex-row" data-aos="fade-right" data-aos-duration="2000">
                                 <Card.Img className="card-img-left" src={child_1}/>
