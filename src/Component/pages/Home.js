@@ -12,7 +12,6 @@ import video_bg from '../../pictures/manyRocketsBg.mp4'
 
 
 import '../../App.css';
-import Footer from "../layouts/Footer";
 
 function Home() {
     // initialize AOS library
@@ -24,7 +23,6 @@ function Home() {
      we barely used any extra websites beside "AI's"
 
      the following links where used as a source for the css of the image onhover animation
-     https://www.youtube.com/watch?v=LSRNmhLS76o&ab_channel=CodeCommerce
      https://codepen.io/alexkleinubing/pen/abBzMKe*/
 
     return (
@@ -62,7 +60,7 @@ function Home() {
                 </Container>
             </Parallax>
 
-            <Parallax strength={0}>
+            <Parallax>
 
                 <Background>
                     <video src={video_bg} autoPlay loop muted/>
@@ -92,10 +90,9 @@ function Home() {
                                     <Card.Title>Jetpack Model B</Card.Title>
                                     <Card.Text>
                                         This model we usually sell to our more advanced clients. Our Crazy Baby Model B
-                                        is
-                                        made for our advanced customers, the customers that have already had their
-                                        experience with a few babies.
-                                        Even though it is more pricey, the price comes with a skilled baby.
+                                        is made for our advanced customers, the customers that have already had their
+                                        experience with a few babies. Even though it is more pricey, the price comes
+                                        with a skilled baby.
                                     </Card.Text>
                                     <Button variant="primary">4'200$</Button>
                                 </Card.Body>
@@ -109,14 +106,9 @@ function Home() {
                                     <Card.Title>Jetpack Pro</Card.Title>
                                     <Card.Text>
                                         This is the model for our clients, that are seriously involved in the baby
-                                        jetpack
-                                        industry.
-                                        This Model includes the most skilled baby, with basically no restrictions, but
-                                        it
-                                        comes at a
-                                        price.
-                                        If you want to conquer the world with a baby wearing a jetpack, this is your
-                                        choice!
+                                        jetpack industry. This Model includes the most skilled baby, with basically no
+                                        restrictions, but it comes at a price. If you want to conquer the world with a
+                                        baby wearing a jetpack, this is your choice!
                                     </Card.Text>
                                     <Button variant="primary">10'000$</Button>
                                 </Card.Body>
@@ -125,7 +117,6 @@ function Home() {
                     </Row>
                 </Container>
             </Parallax>
-            <Footer/>
         </div>
 
     );
